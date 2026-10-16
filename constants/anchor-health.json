@@ -59,8 +59,8 @@
       "lastError": null
     },
     "bitnovo": {
-      "consecutiveFailures": 1,
-      "degraded": false,
+      "consecutiveFailures": 4,
+      "degraded": true,
       "lastCheckedAt": "2026-10-16T09:02:57.040Z",
       "lastStatus": "fail",
       "lastError": "HTTP 502"
