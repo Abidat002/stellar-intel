@@ -9,6 +9,7 @@
 import type { ListedAnchor } from '@/types';
 import { parseListedAnchors } from '@/lib/stellar/listed-anchor-schema';
 
+import apsTokens from './aps-tokens.json';
 import gratz from './gratz.json';
 import ixinium from './ixinium.json';
 import luxPayband from './lux-payband.json';
@@ -24,6 +25,7 @@ import stronghold from './stronghold.json';
 import valtorum from './valtorum.json';
 
 const RAW: unknown[] = [
+  apsTokens,
   gratz,
   ixinium,
   luxPayband,
