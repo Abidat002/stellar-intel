@@ -11,6 +11,7 @@ import { parseListedAnchors } from '@/lib/stellar/listed-anchor-schema';
 
 import apsTokens from './aps-tokens.json';
 import audd from './audd.json';
+import fxdao from './fxdao.json';
 import gmoTrust from './gmo-trust.json';
 import gratz from './gratz.json';
 import ixinium from './ixinium.json';
@@ -31,6 +32,7 @@ import valtorum from './valtorum.json';
 const RAW: unknown[] = [
   apsTokens,
   audd,
+  fxdao,
   gmoTrust,
   gratz,
   ixinium,
