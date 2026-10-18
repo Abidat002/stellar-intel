@@ -43,7 +43,11 @@ import { fetchTopAssetDomains } from './lib/asset-seeds.mjs';
 import { fetchSdfAnchorDirectoryDomains } from './lib/sdf-directory.mjs';
 import { HOSTNAME_RE, parseAnchors, parseCurrencies } from './validate-anchors.mjs';
 import { isImpersonation } from './lib/impersonation.mjs';
-import { extractAnchorsArray, parseAnchors, ANCHORS_PATH } from './check-registry.mjs';
+import {
+  extractAnchorsArray,
+  parseAnchors as parseRegistryAnchors,
+  ANCHORS_PATH,
+} from './check-registry.mjs';
 
 // Kept as the JSON `source` field for older readers that expect one source URL.
 const DIRECTORY_URL = 'https://api.stellar.expert/explorer/public/directory?limit=200';
@@ -770,7 +774,9 @@ async function main() {
   const generatedAt = new Date().toISOString();
 
   if (censusOutPath) {
-    const registryAnchors = parseAnchors(extractAnchorsArray(readFileSync(ANCHORS_PATH, 'utf-8')));
+    const registryAnchors = parseRegistryAnchors(
+      extractAnchorsArray(readFileSync(ANCHORS_PATH, 'utf-8'))
+    );
     const census = buildCensus(results, registryAnchors, generatedAt);
     writeFileSync(censusOutPath, JSON.stringify(census, null, 2) + '\n');
   }
