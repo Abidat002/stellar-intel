@@ -18,6 +18,7 @@ import mirrasets from './mirrasets.json';
 import mobius from './mobius.json';
 import moneygramMgusd from './moneygram-mgusd.json';
 import nafuloo from './nafuloo.json';
+import naobtc from './naobtc.json';
 import phoenix from './phoenix.json';
 import valtorum from './valtorum.json';
 
@@ -31,6 +32,7 @@ const RAW: unknown[] = [
   mobius,
   moneygramMgusd,
   nafuloo,
+  naobtc,
   phoenix,
   valtorum,
 ];
