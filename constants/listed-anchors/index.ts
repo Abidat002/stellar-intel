@@ -29,6 +29,7 @@ import reyts from './reyts.json';
 import stronghold from './stronghold.json';
 import ultraCapital from './ultra-capital.json';
 import valtorum from './valtorum.json';
+import vnx from './vnx.json';
 
 const RAW: unknown[] = [
   apsTokens,
@@ -51,6 +52,7 @@ const RAW: unknown[] = [
   stronghold,
   ultraCapital,
   valtorum,
+  vnx,
 ];
 
 export const LISTED_ANCHORS: readonly ListedAnchor[] = parseListedAnchors(RAW);
