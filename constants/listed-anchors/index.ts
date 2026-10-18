@@ -22,6 +22,7 @@ import moneygramMgusd from './moneygram-mgusd.json';
 import nafuloo from './nafuloo.json';
 import naobtc from './naobtc.json';
 import phoenix from './phoenix.json';
+import reyts from './reyts.json';
 import stronghold from './stronghold.json';
 import valtorum from './valtorum.json';
 
@@ -39,6 +40,7 @@ const RAW: unknown[] = [
   nafuloo,
   naobtc,
   phoenix,
+  reyts,
   stronghold,
   valtorum,
 ];
