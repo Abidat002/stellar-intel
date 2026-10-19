@@ -1,0 +1,33 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "bot/anchor-health-2026-10-19",
+    "bot/anchor-health-2026-10-20",
+    "docs/fee-budget-pct-and-anchor-count",
+    "fix/anchor-survey-duplicate-import",
+    "fix/execute-drawer-escape-flake",
+    "main",
+    "origin",
+    "test/issue-1457-drop-unrendered-landing-specs"
+  ],
+  "parent": {
+    "bot/anchor-health-2026-10-19": "main",
+    "bot/anchor-health-2026-10-20": "main",
+    "docs/fee-budget-pct-and-anchor-count": "main",
+    "fix/anchor-survey-duplicate-import": "main",
+    "fix/execute-drawer-escape-flake": "main",
+    "main": null,
+    "origin": "main",
+    "test/issue-1457-drop-unrendered-landing-specs": "main"
+  },
+  "order": [
+    "main",
+    "bot/anchor-health-2026-10-19",
+    "bot/anchor-health-2026-10-20",
+    "docs/fee-budget-pct-and-anchor-count",
+    "fix/anchor-survey-duplicate-import",
+    "fix/execute-drawer-escape-flake",
+    "origin",
+    "test/issue-1457-drop-unrendered-landing-specs"
+  ]
+}
